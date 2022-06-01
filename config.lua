@@ -11,7 +11,7 @@ Config.Products = {
         [1] = {
             name = "tosti",
             price = 2,
-            amount = 50,
+            amount = 100,
             info = {},
             type = "item",
             slot = 1,
@@ -19,7 +19,7 @@ Config.Products = {
         [2] = {
             name = "water_bottle",
             price = 2,
-            amount = 50,
+            amount = 75,
             info = {},
             type = "item",
             slot = 2,
@@ -27,7 +27,7 @@ Config.Products = {
         [3] = {
             name = "kurkakola",
             price = 2,
-            amount = 50,
+            amount = 100,
             info = {},
             type = "item",
             slot = 3,
@@ -35,7 +35,7 @@ Config.Products = {
         [4] = {
             name = "twerks_candy",
             price = 2,
-            amount = 50,
+            amount = 100,
             info = {},
             type = "item",
             slot = 4,
@@ -43,7 +43,7 @@ Config.Products = {
         [5] = {
             name = "snikkel_candy",
             price = 2,
-            amount = 50,
+            amount = 100,
             info = {},
             type = "item",
             slot = 5,
@@ -51,14 +51,14 @@ Config.Products = {
         [6] = {
             name = "sandwich",
             price = 2,
-            amount = 50,
+            amount = 150,
             info = {},
             type = "item",
             slot = 6,
         },
         [7] = {
             name = "bandage",
-            price = 100,
+            price = 200,
             amount = 50,
             info = {},
             type = "item",
@@ -293,67 +293,160 @@ Config.Products = {
     },
     ["weapons"] = {
         [1] = {
-            name = "weapon_knife",
-            price = 250,
-            amount = 250,
+            name = 'weapon_bat',
+            price = 50,
+            amount = 15,
             info = {},
-            type = "item",
+            type = 'item',
             slot = 1,
         },
         [2] = {
-            name = "weapon_bat",
-            price = 250,
-            amount = 250,
+            name = 'weapon_knife',
+            price = 75,
+            amount = 20,
             info = {},
-            type = "item",
+            type = 'item',
             slot = 2,
         },
         [3] = {
-            name = "weapon_hatchet",
-            price = 250,
-            amount = 250,
+            name = 'weapon_dagger',
+            price = 100,
+            amount = 15,
             info = {},
-            type = "item",
+            type = 'item',
             slot = 3,
-            requiredJob = { "mechanic", "police" }
         },
         [4] = {
-            name = "weapon_pistol",
-            price = 2500,
-            amount = 5,
+            name = 'weapon_snspistol',
+            price = 2000,
+            amount = 20,
             info = {},
-            type = "item",
+            type = 'item',
             slot = 4,
-            requiresLicense = true
+            requiresLicense = true,
+            licensetype = 'weapon1'
         },
         [5] = {
-            name = "weapon_snspistol",
+            name = 'weapon_pistol',
             price = 1500,
-            amount = 5,
+            amount = 15,
             info = {},
-            type = "item",
+            type = 'item',
             slot = 5,
-            requiresLicense = true
+            requiresLicense = true,
+            licensetype = 'weapon1'
         },
         [6] = {
-            name = "weapon_vintagepistol",
+            name = 'weapon_combatpistol',
+            price = 1600,
+            amount = 10,
+            info = {},
+            type = 'item',
+            slot = 6,
+            requiresLicense = true,
+            licensetype = 'weapon1'
+        },
+        [7] = {
+            name = 'weapon_pistol50',
+            price = 2100,
+            amount = 10,
+            info = {},
+            type = 'item',
+            slot = 7,
+            requiresLicense = true,
+            licensetype = 'weapon1'
+        },
+        [8] = {
+            name = 'weapon_heavypistol',
+            price = 2000,
+            amount = 10,
+            info = {},
+            type = 'item',
+            slot = 8,
+            requiresLicense = true,
+            licensetype = 'weapon1'
+        },
+        [9] = {
+            name = 'weapon_vintagepistol',
+            price = 1600,
+            amount = 10,
+            info = {},
+            type = 'item',
+            slot = 9,
+            requiresLicense = true,
+            licensetype = 'weapon1'
+        },
+        [10] = {
+            name = 'weapon_revolver',
+            price = 2500,
+            amount = 10,
+            info = {},
+            type = 'item',
+            slot = 10,
+            requiresLicense = true,
+            licensetype = 'weapon1'
+        },
+        [11] = {
+            name = 'weapon_ceramicpistol',
+            price = 2600,
+            amount = 10,
+            info = {},
+            type = 'item',
+            slot = 11,
+            requiresLicense = true,
+            licensetype = 'weapon1'
+        },
+        [12] = {
+            name = 'weapon_dp9',
             price = 4000,
             amount = 5,
             info = {},
-            type = "item",
-            slot = 6,
-            requiresLicense = true
+            type = 'item',
+            slot = 12,
+            requiresLicense = true,
+            licensetype = 'weapon1'
         },
-        [7] = {
-            name = "pistol_ammo",
-            price = 250,
-            amount = 250,
+        [13] = {
+            name = 'weapon_browning',
+            price = 4200,
+            amount = 5,
             info = {},
-            type = "item",
-            slot = 7,
-            requiresLicense = true
+            type = 'item',
+            slot = 13,
+            requiresLicense = true,
+            licensetype = 'weapon1'
         },
+        [14] = {
+            name = 'weapon_deserteagle',
+            price = 6000,
+            amount = 5,
+            info = {},
+            type = 'item',
+            slot = 14,
+            requiresLicense = true,
+            licensetype = 'weapon1'
+        },
+        [15] = {
+            name = 'weapon_glockgen4',
+            price = 3600,
+            amount = 5,
+            info = {},
+            type = 'item',
+            slot = 15,
+            requiresLicense = true,
+            licensetype = 'weapon1'
+        },
+        [16] = {
+            name = 'pistol_ammo',
+            price = 150,
+            amount = 50,
+            info = {},
+            type = 'item',
+            slot = 16,
+            requiresLicense = false,
+        }
     },
+        
     ["casino"] = {
         [1] = {
             name = 'casinochips',
@@ -376,7 +469,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'mp_m_shopkeep_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52
@@ -389,7 +482,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'mp_m_shopkeep_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52
@@ -402,7 +495,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'mp_m_shopkeep_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52
@@ -415,7 +508,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'mp_m_shopkeep_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52
@@ -428,7 +521,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'mp_m_shopkeep_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52
@@ -441,7 +534,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'mp_m_shopkeep_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52
@@ -454,7 +547,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'mp_m_shopkeep_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52
@@ -467,7 +560,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'mp_m_shopkeep_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52
@@ -482,7 +575,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'mp_m_shopkeep_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52
@@ -495,7 +588,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'mp_m_shopkeep_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52
@@ -508,7 +601,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'mp_m_shopkeep_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52
@@ -521,7 +614,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'mp_m_shopkeep_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52
@@ -534,7 +627,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'mp_m_shopkeep_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52
@@ -549,7 +642,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'mp_m_shopkeep_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52
@@ -562,7 +655,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'mp_m_shopkeep_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52
@@ -575,7 +668,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'mp_m_shopkeep_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52
@@ -588,7 +681,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'mp_m_shopkeep_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52
@@ -601,7 +694,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'mp_m_shopkeep_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52
@@ -616,7 +709,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'mp_m_waremech_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["hardware"],
         ["showblip"] = true,
         ["blipsprite"] = 402
@@ -629,7 +722,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'mp_m_waremech_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["hardware"],
         ["showblip"] = true,
         ["blipsprite"] = 402
@@ -642,7 +735,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'mp_m_waremech_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["hardware"],
         ["showblip"] = true,
         ["blipsprite"] = 402
@@ -652,12 +745,12 @@ Config.Locations = {
     ["ammunation"] = {
         ["label"] = "Ammunation",
         ["coords"] = {
-            [1] = vector4(-661.96, -933.53, 21.83, 177.05)
+            [1] = vector4(-659.09, -939.88, 21.83, 84.45)
         },
         ["ped"] = {
             ["model"] = 's_m_y_ammucity_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
         ["blipsprite"] = 110
@@ -665,12 +758,12 @@ Config.Locations = {
     ["ammunation2"] = {
         ["label"] = "Ammunation",
         ["coords"] = {
-            [1] = vector4(809.68, -2159.13, 29.62, 1.43)
+            [1] = vector4(813.47, -2155.15, 29.62, 346.32)
         },
         ["ped"] = {
             ["model"] = 's_m_y_ammucity_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
         ["blipsprite"] = 110
@@ -678,12 +771,12 @@ Config.Locations = {
     ["ammunation3"] = {
         ["label"] = "Ammunation",
         ["coords"] = {
-            [1] = vector4(1692.67, 3761.38, 34.71, 227.65)
+            [1] = vector4(1698.05, 3757.43, 34.71, 131.86)
         },
         ["ped"] = {
             ["model"] = 's_m_y_ammucity_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
         ["blipsprite"] = 110
@@ -691,12 +784,12 @@ Config.Locations = {
     ["ammunation4"] = {
         ["label"] = "Ammunation",
         ["coords"] = {
-            [1] = vector4(-331.23, 6085.37, 31.45, 228.02)
+            [1] = vector4(-326.1, 6081.19, 31.45, 137.58)
         },
         ["ped"] = {
             ["model"] = 's_m_y_ammucity_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
         ["blipsprite"] = 110
@@ -704,38 +797,38 @@ Config.Locations = {
     ["ammunation5"] = {
         ["label"] = "Ammunation",
         ["coords"] = {
-            [1] = vector4(253.63, -51.02, 69.94, 72.91)
+            [1] = vector4(246.75, -51.39, 69.94, 343.65)
         },
         ["ped"] = {
             ["model"] = 's_m_y_ammucity_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
         ["blipsprite"] = 110
     },
-    ["ammunation6"] = {
+    --[[["ammunation6"] = {
         ["label"] = "Ammunation",
         ["coords"] = {
-            [1] = vector4(23.0, -1105.67, 29.8, 162.91)
+            [1] = vector4(18.32, -1108.09, 29.8, 165.07)
         },
         ["ped"] = {
             ["model"] = 's_m_y_ammucity_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
         ["blipsprite"] = 110
-    },
+    },]]
     ["ammunation7"] = {
         ["label"] = "Ammunation",
         ["coords"] = {
-            [1] = vector4(2567.48, 292.59, 108.73, 349.68)
+            [1] = vector4(2564.75, 298.95, 108.73, 282.96)
         },
         ["ped"] = {
             ["model"] = 's_m_y_ammucity_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
         ["blipsprite"] = 110
@@ -743,12 +836,12 @@ Config.Locations = {
     ["ammunation8"] = {
         ["label"] = "Ammunation",
         ["coords"] = {
-            [1] = vector4(-1118.59, 2700.05, 18.55, 221.89)
+            [1] = vector4(-1112.36, 2697.16, 18.55, 136.42)
         },
         ["ped"] = {
             ["model"] = 's_m_y_ammucity_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
         ["blipsprite"] = 110
@@ -756,12 +849,12 @@ Config.Locations = {
     ["ammunation9"] = {
         ["label"] = "Ammunation",
         ["coords"] = {
-            [1] = vector4(841.92, -1035.32, 28.19, 1.56)
+            [1] = vector4(841.09, -1028.65, 28.19, 286.83)
         },
         ["ped"] = {
             ["model"] = 's_m_y_ammucity_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
         ["blipsprite"] = 110
@@ -769,12 +862,12 @@ Config.Locations = {
     ["ammunation10"] = {
         ["label"] = "Ammunation",
         ["coords"] = {
-            [1] = vector4(-1304.19, -395.12, 36.7, 75.03)
+            [1] = vector4(-1310.88, -394.28, 36.7, 358.75)
         },
         ["ped"] = {
             ["model"] = 's_m_y_ammucity_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
         ["blipsprite"] = 110
@@ -782,12 +875,12 @@ Config.Locations = {
     ["ammunation11"] = {
         ["label"] = "Ammunation",
         ["coords"] = {
-            [1] = vector4(-3173.31, 1088.85, 20.84, 244.18)
+            [1] = vector4(-3166.99, 1086.98, 20.84, 161.47)
         },
         ["ped"] = {
             ["model"] = 's_m_y_ammucity_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
         ["blipsprite"] = 110
@@ -802,7 +895,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 's_m_y_casino_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["casino"],
         ["showblip"] = true,
         ["blipsprite"] = 617
@@ -815,7 +908,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'a_m_y_smartcaspat_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52
@@ -830,7 +923,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'a_m_y_hippy_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["weedshop"],
         ["showblip"] = true,
         ["blipsprite"] = 140
@@ -845,7 +938,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'a_m_y_beach_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["gearshop"],
         ["showblip"] = true,
         ["blipsprite"] = 52
@@ -860,7 +953,7 @@ Config.Locations = {
         ["ped"] = {
             ["model"] = 'a_m_y_beach_01'
         },
-        ["radius"] = 1.5,
+        ['radius'] = 3.0,
         ["products"] = Config.Products["leisureshop"],
         ["showblip"] = true,
         ["blipsprite"] = 52

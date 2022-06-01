@@ -57,6 +57,8 @@ RegisterNetEvent("qb-shops:client:RestockShopItems", function(shop, amount)
     end
 end)
 
+
+
 local function openShop(shop, data)
     local products = data.products
     local ShopItems = {}
@@ -66,7 +68,8 @@ local function openShop(shop, data)
         if data.products == Config.Products["weapons"] then
             if hasLicense and hasLicenseItem then
                 ShopItems.items = SetupItems(shop)
-                QBCore.Functions.Notify(Lang:t("success.dealer_verify"), "success")
+                --QBCore.Functions.Notify(Lang:t("success.dealer_verify"), "success")
+                exports['okokNotify']:Alert('Verifing', Lang:t('success.dealer_verify'), 3000, 'success')
                 Wait(500)
             else
                 for i = 1, #products do
@@ -82,9 +85,11 @@ local function openShop(shop, data)
                         end
                     end
                 end
-                QBCore.Functions.Notify(Lang:t("error.dealer_decline"), "error")
+                --QBCore.Functions.Notify(Lang:t("error.dealer_decline"), "error")
+                exports['okokNotify']:Alert('Declined', Lang:t('error.dealer_decline'), 3000, 'warning')
                 Wait(500)
-                QBCore.Functions.Notify(Lang:t("error.talk_cop"), "error")
+                --QBCore.Functions.Notify(Lang:t("error.talk_cop"), "error")
+                exports['okokNotify']:Alert('Need a License', Lang:t('error.talk_cop'), 'info')
                 Wait(1000)
             end
         else
@@ -97,6 +102,12 @@ local function openShop(shop, data)
         TriggerServerEvent("inventory:server:OpenInventory", "shop", "Itemshop_" .. shop, ShopItems)
     end)
 end
+
+RegisterNetEvent('qb-shops:client:openShop', function (shop, data)
+    local shop = shop
+    local data = data
+    openShop(shop, data)
+end)
 
 -- Threads
 CreateThread(function()

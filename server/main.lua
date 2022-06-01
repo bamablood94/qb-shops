@@ -22,8 +22,8 @@ QBCore.Functions.CreateCallback('qb-shops:server:getLicenseStatus', function(sou
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
     local licenseTable = Player.PlayerData.metadata["licences"]
-    local licenseItem = Player.Functions.GetItemByName("weaponlicense")
-    cb(licenseTable.weapon, licenseItem)
+    local licenseItem = Player.Functions.GetItemByName("weaponlicense1")
+    cb(licenseTable.weapon1, licenseItem)
 end)
 
 local ItemList = {
@@ -43,12 +43,14 @@ RegisterNetEvent('qb-shops:server:sellChips', function()
                     Player.Functions.RemoveItem(Player.PlayerData.items[k].name, Player.PlayerData.items[k].amount, k)
                     
                     Player.Functions.AddMoney("cash", price, "sold-casino-chips")
-                    TriggerClientEvent('QBCore:Notify', src, "You sold your chips for $" .. price)
+                    --TriggerClientEvent('QBCore:Notify', src, "You sold your chips for $" .. price)
+                    TriggerClientEvent('okokNotify:Alert', src, 'Sold', "You sold your chips for $" .. price, 3000, 'success')
                     TriggerEvent("qb-log:server:CreateLog", "casino", "Chips", "blue", "**" .. GetPlayerName(src) .. "** got $" .. price .. " for selling the Chips")
                 end
             end
         end
     else
-        TriggerClientEvent('QBCore:Notify', src, "You have no chips..")
+        --TriggerClientEvent('QBCore:Notify', src, "You have no chips..")
+        TriggerClientEvent('okokNotify:Alert', src, 'Not Enough Chips', 'You have no chips..')
     end
 end)
